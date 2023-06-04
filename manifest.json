@@ -1,0 +1,17 @@
+{
+  "name": "Open Shorts as videos",
+  "version": "1.0.0",
+  "description": "Transforms Youtube™ shorts URLs into normal videos",
+  "manifest_version": 3,
+  "author": "ezxmora",
+  "content_scripts": [
+    {
+      "matches": ["*://www.youtube.com/*"],
+      "run_at": "document_end",
+      "js": ["index.js"]
+    }
+  ],
+  "icons": {
+    "48": "icon48.png"
+  }
+}
